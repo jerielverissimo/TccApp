@@ -1,5 +1,6 @@
 package br.com.etecfran.blackeyes.tcc;
 
+import android.graphics.Typeface;
 import android.support.v7.app.AppCompatActivity;
 import android.app.Activity;
 import android.support.v7.app.ActionBar;
@@ -77,7 +78,10 @@ public class NavigationDrawerFragment extends Fragment {
 
         // Select either the default item (0) or the last selected item.
         selectItem(mCurrentSelectedPosition);
+
     }
+
+
 
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
@@ -107,6 +111,7 @@ public class NavigationDrawerFragment extends Fragment {
                         getString(R.string.title_section3),
                 }));
         mDrawerListView.setItemChecked(mCurrentSelectedPosition, true);
+
         return mDrawerListView;
     }
 
