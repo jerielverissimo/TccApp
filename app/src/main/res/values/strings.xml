@@ -14,4 +14,5 @@
     <string name="title_activity_splash_screen">SplashScreen</string>
 
     <string name="hello_world">Hello world!</string>
+    <string name="title_activity_boas_vindas">BoasVindas</string>
 </resources>
