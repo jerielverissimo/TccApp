@@ -1,7 +1,5 @@
 package br.com.etecfran.blackeyes.tcc;
 
-import android.app.AlertDialog;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -10,44 +8,30 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
-public class BoasVindas extends AppCompatActivity {
+
+public class CadastroObjeto extends AppCompatActivity  {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_boas_vindas);
+        setContentView(R.layout.activity_cadastro_objeto);
 
-        Button btnPular = (Button) findViewById(R.id.btnPular);
-        Button btnAvancar = (Button) findViewById(R.id.btnAvancar);
+        Button btnVoltar = (Button) findViewById(R.id.btnVoltar);
 
-
-
-        btnPular.setOnClickListener(new View.OnClickListener(){
+        btnVoltar.setOnClickListener(new View.OnClickListener(){
 
             public void onClick(View v){
 
-
-                startActivity(new Intent(BoasVindas.this, MainActivity.class));
+                finish();
             }
 
-
-        });
-
-        btnAvancar.setOnClickListener(new View.OnClickListener(){
-
-            public void onClick(View v){
-
-                startActivity(new Intent(BoasVindas.this, CadastroObjeto.class));
-            }
         });
     }
-
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_boas_vindas, menu);
+        getMenuInflater().inflate(R.menu.menu_cadastro_objeto, menu);
         return true;
     }
 

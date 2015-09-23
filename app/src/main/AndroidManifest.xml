@@ -26,6 +26,15 @@
             android:label="@string/title_activity_boas_vindas"
             android:theme="@style/Theme.AppCompat.NoActionBar" >
         </activity>
+        <activity
+            android:name=".CadastroObjeto"
+            android:label="@string/title_activity_cadastro_objeto"
+            android:theme="@style/Theme.AppCompat.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".ModoAvancado"
+            android:label="@string/title_activity_modo_avancado" >
+        </activity>
     </application>
 
 </manifest>

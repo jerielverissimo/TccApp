@@ -1,6 +1,7 @@
 package br.com.etecfran.blackeyes.tcc;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.graphics.Typeface;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.app.ActionBar;
@@ -51,10 +52,21 @@ public class MainActivity extends AppCompatActivity
     @Override
     public void onNavigationDrawerItemSelected(int position) {
         // update the main content by replacing fragments
-        FragmentManager fragmentManager = getSupportFragmentManager();
-        fragmentManager.beginTransaction()
-                .replace(R.id.container, PlaceholderFragment.newInstance(position + 1))
-                .commit();
+
+
+
+        switch (position){
+
+
+            case 0:
+
+                break;
+            case 1:
+
+                startActivity(new Intent(MainActivity.this, CadastroObjeto.class));
+                break;
+        }
+
     }
 
     public void onSectionAttached(int number) {

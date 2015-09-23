@@ -1,0 +1,69 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="br.com.etecfran.blackeyes.tcc.CadastroObjeto"
+    android:background="#212020">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView2"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/cadastro" />
+
+    <Button
+        android:layout_width="75dp"
+        android:layout_height="30dp"
+        android:text="Voltar"
+        android:id="@+id/btnVoltar"
+        android:textSize="7dp"
+        android:background="#212121"
+        android:textColor="#9200E7"
+        android:layout_marginRight="17dp"
+        android:layout_marginEnd="17dp"
+        android:layout_above="@+id/imageButton2"
+        android:layout_toLeftOf="@+id/button"
+        android:layout_toStartOf="@+id/button" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton2"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/objvoz"
+        android:background="@null"
+        android:layout_below="@+id/button"
+        android:layout_alignRight="@+id/imageView2"
+        android:layout_alignEnd="@+id/imageView2"
+        android:layout_marginRight="21dp"
+        android:layout_marginEnd="21dp" />
+
+    <EditText
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:layout_alignBottom="@+id/imageButton2"
+        android:layout_toLeftOf="@+id/imageButton2"
+        android:layout_toStartOf="@+id/imageButton2" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="75dp"
+        android:layout_height="30dp"
+        android:text="Cadastrar"
+        android:id="@+id/button"
+        android:background="#212020"
+        android:textSize="7dp"
+        android:textColor="#9200e7"
+        android:layout_marginTop="212dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/imageButton2"
+        android:layout_alignEnd="@+id/imageButton2"
+        android:layout_marginRight="29dp"
+        android:layout_marginEnd="29dp" />
+
+</RelativeLayout>

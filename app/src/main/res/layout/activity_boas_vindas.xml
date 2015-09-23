@@ -1,11 +1,12 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="wrap_content"
     android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context="br.com.etecfran.blackeyes.tcc.BoasVindas"
-    android:background="#212020">
+    android:background="#212020"
+    android:visibility="visible">
 
     <ImageView
         android:layout_width="fill_parent"
@@ -13,6 +14,39 @@
         android:id="@+id/imageView"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
-        android:src="@drawable/inicio" />
+        android:src="@drawable/inicio"
+        android:visibility="visible" />
+
+    <Button
+        android:layout_width="75dp"
+        android:layout_height="30dp"
+        android:text="Pular"
+        android:id="@+id/btnPular"
+        android:textSize="7dp"
+        android:textAlignment="center"
+        android:background="#212121"
+        android:textColor="#9200E7"
+        android:layout_marginBottom="206dp"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_toLeftOf="@+id/btnAvancar"
+        android:layout_toStartOf="@+id/btnAvancar"
+        android:layout_marginRight="13dp"
+        android:layout_marginEnd="13dp" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="75dp"
+        android:layout_height="30dp"
+        android:text="Avançar"
+        android:id="@+id/btnAvancar"
+        android:textSize="7dp"
+        android:textAlignment="center"
+        android:textColor="#9200E7"
+        android:background="#212121"
+        android:layout_alignTop="@+id/btnPular"
+        android:layout_alignRight="@+id/imageView"
+        android:layout_alignEnd="@+id/imageView"
+        android:layout_marginRight="36dp"
+        android:layout_marginEnd="36dp" />
 
 </RelativeLayout>
